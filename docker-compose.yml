@@ -8,20 +8,4 @@ services:
     environment:
       - NODE_ENV=production
       - PORT=3100
-    depends_on:
-      - snowflake
 
- snowflake:
-    image: snowflakedb/snowflake-docker:latest
-    ports:
-      - "8080:8080"
-    environment:
-      - SNOWFLAKE_ACCOUNT=${SNOWFLAKE_ACCOUNT}
-      - SNOWFLAKE_USER=${SNOWFLAKE_USER}
-      - SNOWFLAKE_PASSWORD=${SNOWFLAKE_PASSWORD}
-      - SNOWFLAKE_WAREHOUSE=${SNOWFLAKE_WAREHOUSE}
-    volumes:
-      - snowflake-data:/var/lib/snowflake
-
-volumes:
- snowflake-data:
