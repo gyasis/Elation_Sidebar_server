@@ -1,0 +1,25 @@
+# This is a backup .env file template for your project.
+# It's crucial to keep this file secure and not commit it to your version control system.
+# To use this file, follow these steps:
+
+# 1. Rename this file to ".env" (remove the "backup" from the filename).
+# 2. Open the ".env" file in a text editor.
+# 3. Replace the placeholder values with your actual sensitive information.
+# 4. Save the file.
+# 5. Ensure the ".env" file is added to your .gitignore file to prevent it from being committed to your repository.
+
+# Snowflake Connection Details
+# Replace the placeholders below with your actual Snowflake account details.
+SNOWFLAKE_ACCOUNT=your_snowflake_account_here
+SNOWFLAKE_USER=your_snowflake_username_here
+SNOWFLAKE_PASSWORD=your_snowflake_password_here
+SNOWFLAKE_WAREHOUSE=your_snowflake_warehouse_here
+
+# Additional Environment Variables
+# If your application requires other environment variables, add them here.
+# For example:
+# API_KEY=your_api_key_here
+# SECRET_KEY=your_secret_key_here
+
+# Note: After adding your sensitive information, make sure to never commit the ".env" file to your repository.
+# To prevent accidental commits, add ".env" to your .gitignore file.S
